@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5p-HV-ggp" customClass="TextKitLabel" customModule="TextKitSample" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="333.5" width="300" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hqh-C2-pLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zme-qW-WAX">
+                                <rect key="frame" x="162.5" y="383.5" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ixW-P3-Vq7"/>
+                                    <constraint firstAttribute="height" constant="50" id="qX9-hX-EOo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyI-Wd-i4b">
+                                <rect key="frame" x="162" y="190" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="kwD-hb-kYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcJ-wB-JoV" customClass="AnimatableLabel" customModule="TextKitSample" customModuleProvider="target">
+                                <rect key="frame" x="162" y="497" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You gods, will give us. Some faults to make us men.">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zme-qW-WAX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="39H-vV-ftb"/>
+                            <constraint firstItem="FyI-Wd-i4b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-25.5" id="9jV-Y3-Sp9"/>
+                            <constraint firstItem="lcJ-wB-JoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="EXg-qN-w5b"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lcJ-wB-JoV" secondAttribute="trailing" id="Rle-5e-sNC"/>
+                            <constraint firstItem="lcJ-wB-JoV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VQL-yD-nlV"/>
+                            <constraint firstItem="c5p-HV-ggp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dSg-tn-zEI"/>
+                            <constraint firstItem="Zme-qW-WAX" firstAttribute="top" secondItem="c5p-HV-ggp" secondAttribute="bottom" constant="50" id="fSs-Y0-0Of"/>
+                            <constraint firstItem="c5p-HV-ggp" firstAttribute="top" secondItem="FyI-Wd-i4b" secondAttribute="bottom" constant="143.5" id="gmW-1n-B2D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lcJ-wB-JoV" secondAttribute="bottom" constant="149" id="vyP-4S-8ei"/>
+                            <constraint firstItem="c5p-HV-ggp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xHV-yE-Zc6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aView" destination="Zme-qW-WAX" id="bde-PX-gYa"/>
+                        <outlet property="label" destination="c5p-HV-ggp" id="DL9-dC-R8r"/>
+                        <outlet property="refLabel" destination="FyI-Wd-i4b" id="Yyj-Fz-3qd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
